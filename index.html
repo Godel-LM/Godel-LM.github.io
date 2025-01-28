@@ -150,7 +150,15 @@
       </div>
     </div>
     <figcaption style="text-align: center; font-size: 1rem; color: #6b7280;">
-      <strong>Figure Overview:</strong> This set of figures illustrates the performance metrics of various proof generation methods on the miniF2F dataset, comparing the effectiveness of different inference budgets and the number of problems solved in Lean-workbook.
+    <p>
+      <strong>Left</strong>: The performance of Pass@32 for full proof generation on miniF2F. Due to limited compute, we compare with DeepSeek-Prover-v1.5 on the Pass@32 metric, which is different from Pass@32 × 6400 in the corresponding figure. The Pass@N metric indicates that we generate N proofs for a single problem; if any one of these N proofs successfully solves the problem, it is considered solved.
+    </p>
+    <p>
+      <strong>Middle</strong>: This sub-figure presents a comparison of Goedel-Prover-SFT and Deepseek-Prover-v1.5 in terms of miniF2F performance across different inference budgets, ranging from Pass@32, 64, 128, ..., 4 × 6400, to 16 × 6400. The performance numbers of Deepseek-Prover-v1.5 are provided for reference. Due to computational resource constraints, we tested Goedel-Prover-SFT only up to Pass@4 × 6400. Notably, Goedel-Prover-SFT's Pass@256 already exceeds the Pass@16 × 6400 performance of Deepseek-Prover-v1.5-RL (without inference time tree search).
+    </p>    
+    <p>
+      <strong>Right</strong>: The number of problems solved in Lean-workbook by Goedel-Prover-SFT compared to existing works. InternLM2.5-Step-Prover and InternLM-Math-Plus collectively solve and open-source 15.7K samples, while we solve and open-source 29.7K samples.
+    </p>  
     </figcaption>
 </section>
   
@@ -185,7 +193,7 @@
       </div>
     </div> -->
     
-    <div class="content has-text-justified">
+<!--     <div class="content has-text-justified">
             <p>
               Large language models (LLMs) have shown impressive capabilities in reasoning, particularly in solving
               mathematical problems. However, relying solely on natural language for reasoning poses challenges in
@@ -201,7 +209,7 @@
               InternLM-Math-Plus. We conduct thorough evaluations across several datasets and contribute open-source
               resources to support future research in formal theorem proving.
             </p>
-      </div>
+      </div> -->
     
     <div style="background: #f8f9fa; border-radius: 1rem; padding: 2rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
       <h2 style="text-align: center; font-size: 1.5rem; font-weight: 700; margin-bottom: 2rem; color: #1f2937;">Key
