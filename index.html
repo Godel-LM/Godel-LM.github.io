@@ -151,66 +151,13 @@
     </div>
     <figcaption style="text-align: center; font-size: 1rem; color: #6b7280;">
     <p>
-      <strong>Left</strong>: The performance of Pass@32 for full proof generation on miniF2F. Due to limited compute, we compare with DeepSeek-Prover-v1.5 on the Pass@32 metric, which is different from Pass@32 × 6400 in the corresponding figure. The Pass@N metric indicates that we generate N proofs for a single problem; if any one of these N proofs successfully solves the problem, it is considered solved.
-    </p>
-    <p>
-      <strong>Middle</strong>: This sub-figure presents a comparison of Goedel-Prover-SFT and Deepseek-Prover-v1.5 in terms of miniF2F performance across different inference budgets, ranging from Pass@32, 64, 128, ..., 4 × 6400, to 16 × 6400. The performance numbers of Deepseek-Prover-v1.5 are provided for reference. Due to computational resource constraints, we tested Goedel-Prover-SFT only up to Pass@4 × 6400. Notably, Goedel-Prover-SFT's Pass@256 already exceeds the Pass@16 × 6400 performance of Deepseek-Prover-v1.5-RL (without inference time tree search).
-    </p>    
-    <p>
-      <strong>Right</strong>: The number of problems solved in Lean-workbook by Goedel-Prover-SFT compared to existing works. InternLM2.5-Step-Prover and InternLM-Math-Plus collectively solve and open-source 15.7K samples, while we solve and open-source 29.7K samples.
+      <strong>(Left)</strong>: The performance of Pass@32 for full proof generation on miniF2F. Due to limited compute, we compare with DeepSeek-Prover-v1.5 on the Pass@32 metric, which is different from Pass@32 × 6400 in the corresponding figure. The Pass@N metric indicates that we generate N proofs for a single problem; if any one of these N proofs successfully solves the problem, it is considered solved.<strong>(Middle)</strong>: This sub-figure presents a comparison of Goedel-Prover-SFT and Deepseek-Prover-v1.5 in terms of miniF2F performance across different inference budgets, ranging from Pass@32, 64, 128, ..., 4 × 6400, to 16 × 6400. The performance numbers of Deepseek-Prover-v1.5 are provided for reference. Due to computational resource constraints, we tested Goedel-Prover-SFT only up to Pass@4 × 6400. Notably, Goedel-Prover-SFT's Pass@256 already exceeds the Pass@16 × 6400 performance of Deepseek-Prover-v1.5-RL (without inference time tree search).<strong>(Right)</strong>: The number of problems solved in Lean-workbook by Goedel-Prover-SFT compared to existing works. InternLM2.5-Step-Prover and InternLM-Math-Plus collectively solve and open-source 15.7K samples, while we solve and open-source 29.7K samples.
     </p>  
     </figcaption>
+    
 </section>
   
-<!--   <section style="max-width: 1000px; margin: 0 auto; padding: 2rem 1rem;">
-    <div style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem;">
-      <div style="flex: 0 0 40%; text-align: center;">
-        <figure>
-          <img src="./static/images/minif2f_bar_plot.png" alt="miniF2F Performance"
-            style="width: 100%; height: auto; border-radius: 0.5rem;">
-          <figcaption style="margin-top: 0.5rem; font-size: 0.875rem; color: #6b7280;">
-            Performance of Pass@32 for full proof generation on miniF2F
-          </figcaption>
-        </figure>
-      </div>
-      <div style="flex: 0 0 30%; text-align: center;">
-        <figure>
-          <img src="./static/images/inference_scale_performance.png" alt="Inference Scale Performance"
-            style="width: 100%; height: auto; border-radius: 0.5rem;">
-          <figcaption style="margin-top: 0.5rem; font-size: 0.875rem; color: #6b7280;">
-            Comparison across different inference budgets
-          </figcaption>
-        </figure>
-      </div>
-      <div style="flex: 0 0 23%; text-align: center;">
-        <figure>
-          <img src="./static/images/leanworkbook_proofs_bar_plot.png" alt="Leanworkbook Proofs"
-            style="width: 100%; height: auto; border-radius: 0.5rem;">
-          <figcaption style="margin-top: 0.5rem; font-size: 0.875rem; color: #6b7280;">
-            Number of problems solved in Lean-workbook
-          </figcaption>
-        </figure>
-      </div>
-    </div> -->
-    
-<!--     <div class="content has-text-justified">
-            <p>
-              Large language models (LLMs) have shown impressive capabilities in reasoning, particularly in solving
-              mathematical problems. However, relying solely on natural language for reasoning poses challenges in
-              verification, undermining trust in practical applications. Formal theorem proving offers a promising
-              solution: training LLMs to generate proofs in formal languages that can be mechanically verified. A key
-              obstacle in this domain is the scarcity of formal data. To address this challenge, we begin by training
-              formalizers to transform extensive datasets of natural language problems into formal statements. Next, we
-              train the prover through a standard iterative process that involves generating and verifying proofs based
-              on these statements, followed by training the prover using the verified proofs. Our model outperforms the
-              previous state-of-the-art whole-proof generation model, DeepSeek-Prover-v1.5-RL, by 7.6\% on the miniF2F
-              benchmark, achieving a Pass@32 score of 57.6\%. Furthermore, we have cumulatively solved 29.7K problems in
-              Lean Workbook, significantly increasing the existing 16K proofs found by InternLM2.5-StepProver and
-              InternLM-Math-Plus. We conduct thorough evaluations across several datasets and contribute open-source
-              resources to support future research in formal theorem proving.
-            </p>
-      </div> -->
-    
+  <section class="section">    
     <div style="background: #f8f9fa; border-radius: 1rem; padding: 2rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
       <h2 style="text-align: center; font-size: 1.5rem; font-weight: 700; margin-bottom: 2rem; color: #1f2937;">Key
         Achievements</h2>
