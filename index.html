@@ -113,6 +113,34 @@
         </div>
       </div>
     </div>
+
+    <div class="container" style="margin-bottom: 2vh;">
+      <!-- Caption -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Introduction</h2>
+          <div class="content has-text-justified">
+            <p>
+              Large language models (LLMs) have shown impressive capabilities in reasoning, particularly in solving
+              mathematical problems. However, relying solely on natural language for reasoning poses challenges in
+              verification, undermining trust in practical applications. Formal theorem proving offers a promising
+              solution: training LLMs to generate proofs in formal languages that can be mechanically verified. A key
+              obstacle in this domain is the scarcity of formal data. To address this challenge, we begin by training
+              formalizers to transform extensive datasets of natural language problems into formal statements. Next, we
+              train the prover through a standard iterative process that involves generating and verifying proofs based
+              on these statements, followed by training the prover using the verified proofs. Our model outperforms the
+              previous state-of-the-art whole-proof generation model, DeepSeek-Prover-v1.5-RL, by 7.6\% on the miniF2F
+              benchmark, achieving a Pass@32 score of 57.6\%. Furthermore, we have cumulatively solved 29.7K problems in
+              Lean Workbook, significantly increasing the existing 16K proofs found by InternLM2.5-StepProver and
+              InternLM-Math-Plus. We conduct thorough evaluations across several datasets and contribute open-source
+              resources to support future research in formal theorem proving.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+    
   </section>
 
   <section style="max-width: 1000px; margin: 0 auto; padding: 2rem 1rem;">
